@@ -1,0 +1,36 @@
+model_name: "/gpfswork/rech/pds/upa43yu/models/bert-base-cased"
+subtoken_pooling: "first"
+fine_tune: True
+hidden_size: 768
+
+dataset_path: "/gpfswork/rech/ohy/upa43yu/NER_datasets/CoNLL 2003"
+
+max_width: 15
+span_mode: "marker"
+
+dropout: 0.4
+sample_rate: 0.6
+model_type: "fsemicrf"
+decoding: "global"
+
+# list of learning rates for each layer
+learning_rates:
+  - 1e-5 # for bert embeddings
+  - 1e-4 # for other layers
+
+# list of weight decay for each layer
+weight_decay:
+  - 1e-3 # for bert embeddings
+  - 1e-2 # for other layers
+
+batch_size:
+  - 16 # for training
+  - 32 # for evaluation
+
+training: #
+  - epoch: 10 # number of epochs to update
+    steps: 10000 # minimum number of steps
+    warmup_ratio: 0.001 # warmup steps ratio
+    eval_steps: 250 # evaluation steps
+
+root_dir: "logs"
