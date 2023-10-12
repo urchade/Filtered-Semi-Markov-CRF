@@ -60,14 +60,14 @@ decoding: "greedy"
 ```
 
 ### Alternatives
-#### Options for **decoding** parameter:
+* Options for **decoding** parameter:
 ```plaintext
 - 'global': maximize sum of span scores
 - 'global_mean': maximize average of span scores
 - 'greedy': greedy span selection
 ```
 
-#### Options for **model_type** parameter:
+* Options for **model_type** parameter:
 ```plaintext
 - 'standard': Standard Span-Based NER loss (span-level NLL)
 - 'fsemicrf': Filtered Semi-Markov CRF loss 
