@@ -7,10 +7,7 @@ This repository provides a PyTorch implementation of the paper "Filtered Semi-Ma
 - [Overview](#overview)
 - [Training Algorithms](#training-algorithms)
 - [Decoding Algorithms](#decoding-algorithms)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Citation](#citation)
-- [License](#license)
+
 
 ## Overview
 
@@ -37,4 +34,40 @@ The implemented decoding algorithms aim to return non-overlapping spans. The fol
   
 3. **Exhaustive Search**: Utilizes an arbitrary scoring function to return spans with the maximum score.
    - This has been proposed in our [Zaratiana et al., 2022b](https://aclanthology.org/2022.umios-1.1/)
- 
+
+
+## Configuration Options
+
+To configure the model and decoding algorithm, modify the configuration file as described below:
+
+#### For Filtered Semi-Markov CRF:
+```plaintext
+model_type: "fsemicrf"
+decoding: "global"
+```
+
+#### For Global Span Selection:
+```plaintext
+model_type: "gss"
+decoding: "global"
+```
+
+#### For Standard Model:
+```plaintext
+model_type: "standard"
+decoding: "greedy"
+```
+
+### List of Decoding Options
+```plaintext
+- 'global': maximize sum of span scores
+- 'global_mean': maximize average of span scores
+- 'greedy': greedy span selection
+```
+
+### List of model_type Options
+```plaintext
+- 'standard': Standard Span-Based NER
+- 'fsemicrf': Filtered Semi-Markov CRF
+- 'gss': Global Span Selection
+```
