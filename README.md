@@ -42,22 +42,22 @@ The implemented decoding algorithms aim to return non-overlapping spans. The fol
 To configure the model and decoding algorithm, modify the configuration file (see config/conll.yaml as an example) as described below:
 
 ### Model variants
-#### Filtered Semi-Markov CRF:
+#### [Filtered Semi-Markov CRF](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf) (Zaratiana et al., EMNLP 2023):
 ```plaintext
 model_type: "fsemicrf"
 decoding: "global"
 ```
 
-#### [Global Span Selection for Named Entity Recognition](https://aclanthology.org/2022.umios-1.2) (Zaratiana et al., UM-IoS 2022):
-```plaintext
-model_type: "gss"
-decoding: "global"
-```
-
-#### Standard Model:
+#### [Named Entity Recognition as Structured Span Prediction](https://aclanthology.org/2022.umios-1.1) (Zaratiana et al., UM-IoS 2022a)
 ```plaintext
 model_type: "standard"
 decoding: "greedy"
+```
+
+#### [Global Span Selection for Named Entity Recognition](https://aclanthology.org/2022.umios-1.2) (Zaratiana et al., UM-IoS 2022b):
+```plaintext
+model_type: "gss"
+decoding: "global"
 ```
 
 ### Alternatives
