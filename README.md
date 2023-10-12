@@ -38,34 +38,36 @@ The implemented decoding algorithms aim to return non-overlapping spans. The fol
 
 ## Configuration Options
 
-To configure the model and decoding algorithm, modify the configuration file as described below:
+To configure the model and decoding algorithm, modify the configuration file (see config/conll.yaml as an example) as described below:
 
-#### For Filtered Semi-Markov CRF:
+### Model variants
+#### Filtered Semi-Markov CRF:
 ```plaintext
 model_type: "fsemicrf"
 decoding: "global"
 ```
 
-#### For Global Span Selection:
+#### Global Span Selection:
 ```plaintext
 model_type: "gss"
 decoding: "global"
 ```
 
-#### For Standard Model:
+#### Standard Model:
 ```plaintext
 model_type: "standard"
 decoding: "greedy"
 ```
 
-### List of Decoding Options
+### Alternatives
+#### Options for **decoding** parameter:
 ```plaintext
 - 'global': maximize sum of span scores
 - 'global_mean': maximize average of span scores
 - 'greedy': greedy span selection
 ```
 
-### List of model_type Options
+#### Options for **model_type** parameter:
 ```plaintext
 - 'standard': Standard Span-Based NER
 - 'fsemicrf': Filtered Semi-Markov CRF
