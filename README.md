@@ -18,8 +18,9 @@ The repository includes a variety of training and decoding algorithms to cater t
 
 Here are the different training algorithms that have been implemented:
 
-1. **Standard Span-Based NER with Local Objective**: This is the baseline algorithm for training the span-based NER model.
-  
+1. **Standard Span-Based NER with Local Objective**: This is the baseline algorithm for training the span-based NER model. Our paper contains some details about this:
+   - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.1/)
+     
 2. **Global Span Selection**: An implementation based on the model from Zaratiana et al., 2022a.
    - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.2/)
 
@@ -43,16 +44,17 @@ The implemented decoding algorithms aim to return non-overlapping spans. The fol
 To configure the model and decoding algorithm, modify the configuration file (see config/conll.yaml as an example) as described below:
 
 ### Model variants
-#### [Filtered Semi-Markov CRF](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf) (Zaratiana et al., EMNLP 2023):
-```plaintext
-model_type: "fsemicrf"
-decoding: "global"
-```
 
 #### [Named Entity Recognition as Structured Span Prediction](https://aclanthology.org/2022.umios-1.1) (Zaratiana et al., UM-IoS 2022a)
 ```plaintext
 model_type: "standard"
 decoding: "greedy" or "global" or "global_mean"
+```
+
+#### [Filtered Semi-Markov CRF](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf) (Zaratiana et al., EMNLP 2023):
+```plaintext
+model_type: "fsemicrf"
+decoding: "global"
 ```
 
 #### [Global Span Selection for Named Entity Recognition](https://aclanthology.org/2022.umios-1.2) (Zaratiana et al., UM-IoS 2022b):
