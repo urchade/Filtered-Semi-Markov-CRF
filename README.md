@@ -22,7 +22,19 @@ Here are the different training algorithms that have been implemented:
 
 1. **Standard Span-Based NER with Local Objective**: This is the baseline algorithm for training the span-based NER model.
   
-2. **Global Span Selection**: An implementation based on the model from Zaratiana et al., 2022.
+2. **Global Span Selection**: An implementation based on the model from Zaratiana et al., 2022a.
    - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.2/)
 
 3. **Filtered Semi-Markov CRF**: This algorithm utilizes global span selection but adds label-dependent scoring and transition scores. It is essentially a filtered version of the original semi-CRF algorithm.
+
+## Decoding Algorithms
+
+The implemented decoding algorithms aim to return non-overlapping spans. The following algorithms are available:
+
+1. **Greedy Decoding**: Returns the first best non-overlapping spans.
+  
+2. **Exact Decoding**: Returns spans with the highest sum of scores.
+  
+3. **Exhaustive Search**: Utilizes an arbitrary scoring function to return spans with the maximum score.
+   - This has been proposed in our [Zaratiana et al., 2022b]([https://aclanthology.org/2022.umios-1.2/](https://aclanthology.org/2022.umios-1.1/)https://aclanthology.org/2022.umios-1.1/)
+ 
