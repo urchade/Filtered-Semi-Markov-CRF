@@ -51,7 +51,7 @@ decoding: "global"
 #### [Named Entity Recognition as Structured Span Prediction](https://aclanthology.org/2022.umios-1.1) (Zaratiana et al., UM-IoS 2022a)
 ```plaintext
 model_type: "standard"
-decoding: "greedy"
+decoding: "greedy" or "global" or "global_mean"
 ```
 
 #### [Global Span Selection for Named Entity Recognition](https://aclanthology.org/2022.umios-1.2) (Zaratiana et al., UM-IoS 2022b):
