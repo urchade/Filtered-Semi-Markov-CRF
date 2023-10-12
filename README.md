@@ -48,7 +48,7 @@ model_type: "fsemicrf"
 decoding: "global"
 ```
 
-#### Global Span Selection:
+#### [Global Span Selection for Named Entity Recognition](https://aclanthology.org/2022.umios-1.2) (Zaratiana et al., UM-IoS 2022):
 ```plaintext
 model_type: "gss"
 decoding: "global"
