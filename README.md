@@ -36,5 +36,5 @@ The implemented decoding algorithms aim to return non-overlapping spans. The fol
 2. **Exact Decoding**: Returns spans with the highest sum of scores.
   
 3. **Exhaustive Search**: Utilizes an arbitrary scoring function to return spans with the maximum score.
-   - This has been proposed in our [Zaratiana et al., 2022b]([https://aclanthology.org/2022.umios-1.2/](https://aclanthology.org/2022.umios-1.1/)https://aclanthology.org/2022.umios-1.1/)
+   - This has been proposed in our [Zaratiana et al., 2022b](https://aclanthology.org/2022.umios-1.1/)
  
