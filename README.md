@@ -24,6 +24,7 @@ Here are the different training algorithms that have been implemented:
    - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.2/)
 
 3. **Filtered Semi-Markov CRF**: This algorithm utilizes global span selection but adds label-dependent scoring and transition scores. It is essentially a filtered version of the original semi-CRF algorithm.
+   - 📝 [Read the paper](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf)
 
 ## Decoding Algorithms
 
