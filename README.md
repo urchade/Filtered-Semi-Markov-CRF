@@ -74,3 +74,46 @@ decoding: "greedy"
 - 'fsemicrf': Filtered Semi-Markov CRF loss 
 - 'gss': Global Span Selection loss
 ```
+
+## Citation
+
+If you find this code useful in your research, please consider citing our papers
+
+```bibtex
+@inproceedings{zaratiana-etal-2022-global,
+    title = "Global Span Selection for Named Entity Recognition",
+    author = "Zaratiana, Urchade  and
+      Elkhbir, Niama  and
+      Holat, Pierre  and
+      Tomeh, Nadi  and
+      Charnois, Thierry",
+    booktitle = "Proceedings of the Workshop on Unimodal and Multimodal Induction of Linguistic Structures (UM-IoS)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.umios-1.2",
+    doi = "10.18653/v1/2022.umios-1.2",
+    pages = "11--17",
+    abstract = "Named Entity Recognition (NER) is an important task in Natural Language Processing with applications in many domains. In this paper, we describe a novel approach to named entity recognition, in which we output a set of spans (i.e., segmentations) by maximizing a global score. During training, we optimize our model by maximizing the probability of the gold segmentation. During inference, we use dynamic programming to select the best segmentation under a linear time complexity. We prove that our approach outperforms CRF and semi-CRF models for Named Entity Recognition. We will make our code publicly available.",
+}
+```
+
+```bibtex
+@inproceedings{zaratiana-etal-2022-named,
+    title = "Named Entity Recognition as Structured Span Prediction",
+    author = "Zaratiana, Urchade  and
+      Tomeh, Nadi  and
+      Holat, Pierre  and
+      Charnois, Thierry",
+    booktitle = "Proceedings of the Workshop on Unimodal and Multimodal Induction of Linguistic Structures (UM-IoS)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.umios-1.1",
+    doi = "10.18653/v1/2022.umios-1.1",
+    pages = "1--10",
+    abstract = "Named Entity Recognition (NER) is an important task in Natural Language Processing with applications in many domains. While the dominant paradigm of NER is sequence labelling, span-based approaches have become very popular in recent times but are less well understood. In this work, we study different aspects of span-based NER, namely the span representation, learning strategy, and decoding algorithms to avoid span overlap. We also propose an exact algorithm that efficiently finds the set of non-overlapping spans that maximizes a global score, given a list of candidate spans. We performed our study on three benchmark NER datasets from different domains. We make our code publicly available at \url{https://github.com/urchade/span-structured-prediction}.",
+}
+```
