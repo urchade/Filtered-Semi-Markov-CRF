@@ -7,6 +7,7 @@ This repository provides a PyTorch implementation of the paper "Filtered Semi-Ma
 - [Overview](#overview)
 - [Training Algorithms](#training-algorithms)
 - [Decoding Algorithms](#decoding-algorithms)
+- [Configuration Options](#configuration-options)
 
 
 ## Overview
