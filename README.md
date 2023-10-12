@@ -69,7 +69,7 @@ decoding: "greedy"
 
 #### Options for **model_type** parameter:
 ```plaintext
-- 'standard': Standard Span-Based NER
-- 'fsemicrf': Filtered Semi-Markov CRF
-- 'gss': Global Span Selection
+- 'standard': Standard Span-Based NER loss (span-level NLL)
+- 'fsemicrf': Filtered Semi-Markov CRF loss 
+- 'gss': Global Span Selection loss
 ```
