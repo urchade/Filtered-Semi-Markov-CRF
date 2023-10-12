@@ -1,12 +1,12 @@
-model_name: "/gpfswork/rech/pds/upa43yu/models/bert-base-cased"
+model_name: "bert-base-cased"
 subtoken_pooling: "first"
 fine_tune: True
 hidden_size: 768
 
-dataset_path: "/gpfswork/rech/ohy/upa43yu/NER_datasets/CoNLL 2003"
+dataset_path: "NER_datasets/CoNLL 2003"
 
 max_width: 15
-span_mode: "marker"
+span_mode: "endpoints"
 
 dropout: 0.4
 sample_rate: 0.6
