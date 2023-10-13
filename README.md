@@ -18,14 +18,14 @@ The repository includes a variety of training and decoding algorithms to cater t
 
 Here are the different training algorithms that have been implemented:
 
-1. **Standard Span-Based NER with Local Objective**: This is the baseline algorithm for training the span-based NER model. Our paper contains some details about this:
+1. **Filtered Semi-Markov CRF**: This algorithm utilizes global span selection but adds label-dependent scoring and transition scores. It is essentially a filtered version of the original semi-CRF algorithm.
+   - 📝 [Read the paper](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf)
+   
+2. **Standard Span-Based NER with Local Objective**: This is the baseline algorithm for training the span-based NER model. Our paper contains some details about this:
    - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.1/)
      
-2. **Global Span Selection**: An implementation based on the model from Zaratiana et al., 2022a.
+3. **Global Span Selection**: An implementation based on the model from Zaratiana et al., 2022a.
    - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.2/)
-
-3. **Filtered Semi-Markov CRF**: This algorithm utilizes global span selection but adds label-dependent scoring and transition scores. It is essentially a filtered version of the original semi-CRF algorithm.
-   - 📝 [Read the paper](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf)
 
 ## Decoding Algorithms
 
