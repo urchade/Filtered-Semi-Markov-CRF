@@ -1,0 +1,6 @@
+flair==0.11.3
+torch==1.12.0
+transformers==4.19.2
+allennlp==2.10.1
+networkx==3.1
+numpy==1.24.1
