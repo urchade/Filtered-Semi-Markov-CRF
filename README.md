@@ -19,7 +19,7 @@ The repository includes a variety of training and decoding algorithms to cater t
 Here are the different training algorithms that have been implemented:
 
 1. **Filtered Semi-Markov CRF**: This algorithm utilizes global span selection but adds label-dependent scoring and transition scores. It is essentially a filtered version of the original semi-CRF algorithm.
-   - 📝 [Read the paper](https://urchade.github.io/assets/Filtered_Semi_CRF.pdf)
+   - 📝 [Read the paper](https://arxiv.org/abs/2311.18028)
    
 2. **Standard Span-Based NER with Local Objective**: This is the baseline algorithm for training the span-based NER model. Our paper contains details about this:
    - 📝 [Read the paper](https://aclanthology.org/2022.umios-1.1/)
@@ -81,6 +81,18 @@ decoding: "global"
 ## Citation
 
 If you find this code useful in your research, please consider citing our papers
+
+
+```bibtex
+@misc{zaratiana2023filtered,
+      title={Filtered Semi-Markov CRF}, 
+      author={Urchade Zaratiana and Nadi Tomeh and Niama El Khbir and Pierre Holat and Thierry Charnois},
+      year={2023},
+      eprint={2311.18028},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ```bibtex
 @inproceedings{zaratiana-etal-2022-global,
