@@ -1,7 +1,7 @@
 from data import create_dataset
 from model import NerSpanModel
 
-path = "/Users/urchadezaratiana/Documents/remote-server/NER_datasets/CoNLL 2003"
+path = "CoNLL 2003"
 
 train_dataset, dev_dataset, test_dataset, labels = create_dataset(path)
 
