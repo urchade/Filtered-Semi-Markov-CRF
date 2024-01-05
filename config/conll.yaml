@@ -3,7 +3,7 @@ subtoken_pooling: "first"
 fine_tune: True
 hidden_size: 768
 
-dataset_path: "NER_datasets/CoNLL 2003"
+dataset_path: "CoNLL 2003"
 
 max_width: 15
 span_mode: "endpoints"
